@@ -30,8 +30,8 @@ Demos were included in the  [Demo.ipynb](https://github.com/izhangcd/DeepHF/blob
 
 * [data/esp_seq_data_array.pkl](https://github.com/izhangcd/DeepHF/blob/master/data/esp_seq_data_array.pkl), features and experimental edit efficiency data for eSpCas9(1.1). It can be used to train the model.
 
-* [data/hf_seq_data_array.pkl](https://github.com/izhangcd/DeepHF/blob/master/data/esp_seq_data_array.pkl) , features and experimental edit efficiency data for Cas9-HF1. It can be used to train the model.
+* [data/hf_seq_data_array.pkl](https://github.com/izhangcd/DeepHF/blob/master/data/hf_seq_data_array.pkl) , features and experimental edit efficiency data for Cas9-HF1. It can be used to train the model.
 
 * [models/esp_rnn_model.hd5](https://github.com/izhangcd/DeepHF/blob/master/models/esp_rnn_model.hd5),the final model file of eSpCas9(1.1) used in the DeepHF wibsite.
 
-* [models/hf_rnn_model.hd5](https://github.com/izhangcd/DeepHF/blob/master/models/esp_rnn_model.hd5),the final model file of Cas9-HF1 used in the DeepHF wibsite.
+* [models/hf_rnn_model.hd5](https://github.com/izhangcd/DeepHF/blob/master/models/hf_rnn_model.hd5),the final model file of Cas9-HF1 used in the DeepHF wibsite.
