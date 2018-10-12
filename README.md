@@ -8,5 +8,5 @@
 * biopython=1.71 
 * viennarna=2.4.5
 
-It is worth noting that when the computing environment(e.g, the version of tensorflow or biopython) changes, the prediction results may change.
+It is worth noting that when the computing environment(e.g, the version of tensorflow or biopython) changes, the prediction results might change a little bit, but the main conclusion won't be affected.
 
