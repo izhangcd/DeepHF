@@ -91,7 +91,7 @@ def lstm_model(model_type='esp', batch_size=90, epochs=50, initializer='0',em_di
     
     np.random.seed(1337)
     early_stopping = EarlyStopping(monitor='val_loss', patience=5, verbose=1)
-    get_best_model = GetBest('Models/' + model_type + '_rnn.hd5',monitor='val_loss', verbose=1, mode='min')
+    get_best_model = GetBest('models/' + model_type + '_rnn.hd5',monitor='val_loss', verbose=1, mode='min')
     model.fit([X_train,X_train_biofeat], 
     #model.fit([X_train], 
                  y_train,
