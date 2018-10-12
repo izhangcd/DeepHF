@@ -74,7 +74,7 @@ def lstm_model(model_type='esp', batch_size=90, epochs=50, initializer='0',em_di
     x = Bidirectional(lstm)(x)
     x = Flatten()(x)
 
-#     #生物学特征
+    #biological featues
     biological_input = Input(name = 'bio_input', shape = (X_train_biofeat.shape[1],))
     x = keras.layers.concatenate([x, biological_input])
 
