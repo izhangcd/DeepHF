@@ -10,8 +10,9 @@ The required software/packages are:
 * scikit-learn=0.19.1 
 * biopython=1.71 
 * viennarna=2.4.5
+Installation time depends on your own network environment.
 
-It is worth noting that when the computing environment(e.g, the version of tensorflow or biopython) changes, the prediction results might change a little bit, but the main conclusion won't be affected.
+It is worth noting that when the computing environment(e.g, the version of tensorflow or biopython) changes, the prediction results might change slightly, but the main conclusion won't be affected.
 
 ### Installation Guide
 ```bash
