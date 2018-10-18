@@ -10,12 +10,18 @@ The required software/packages are:
 * scikit-learn=0.19.1 
 * biopython=1.71 
 * viennarna=2.4.5
+* matplotlib
+* DotMap
+* GPyOpt
+* pandas
 
 It is worth noting that when the computing environment(e.g, the version of tensorflow or biopython) changes, the prediction results might change slightly, but the main conclusion won't be affected.
 
 ### Installation Guide
 ```bash
-conda create -n crispr python=3.6.5 ipykernel numpy=1.14.0 scipy=1.0.0 h5py=2.7.1 tensorflow=1.8.0 keras=2.1.6 scikit-learn=0.19.1 biopython=1.71 viennarna=2.4.5
+conda create -n crispr python=3.6.5 ipykernel matplotlib pandas numpy=1.14.0 scipy=1.0.0 h5py=2.7.1 tensorflow=1.8.0 keras=2.1.6 scikit-learn=0.19.1 biopython=1.71 viennarna=2.4.5
+pip install GPyOpt
+pip install DotMap
 ipython kernel install --user --name crispr --display-name "Python3(crispr)"
 ```
 Installation time depends on your own network environment.
