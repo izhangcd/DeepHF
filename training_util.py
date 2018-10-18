@@ -166,7 +166,7 @@ class GetBest(Callback):
                     self.best = current
                     self.best_epochs = epoch + 1
                     self.best_weights = self.model.get_weights()
-                    self.model.save(filepath, overwrite=True)
+                    #self.model.save(filepath, overwrite=True)
                 else:
                     if self.verbose > 0:
                         print('\nEpoch %05d: %s did not improve.' %
@@ -177,4 +177,4 @@ class GetBest(Callback):
             print('Using epoch %05d with %s: %0.5f.' % (self.best_epochs, self.monitor,
                                                        self.best))
         self.model.set_weights(self.best_weights)
-        self.model.save(self.filepath, overwrite=True)
+        #self.model.save(self.filepath, overwrite=True)
