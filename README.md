@@ -29,6 +29,9 @@ Installation time depends on your own network environment.
 ### Demo
 Demos were included in the  [Demo.ipynb](https://github.com/izhangcd/DeepHF/blob/master/Demo.ipynb) file. It contains prediction, metrics and model training demos.
 
+### Hyperparameters Searching
+[HyperParametersSearching.ipynb](https://github.com/izhangcd/DeepHF/blob/master/HyperParametersSearching.ipynb), HyperParameters searahcing demonstrates how to get the optimized hyperprameters of DeepHF model.It is time consuming.
+
 ### Files description
 * [feature_util.py](https://github.com/izhangcd/DeepHF/blob/master/feature_util.py) contains the code for extracting position related features and biological features.
 
