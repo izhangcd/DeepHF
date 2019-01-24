@@ -8,10 +8,20 @@ from feature_util import *
 
 #load models for eSpCas9(1.1) and SpCas9-HF1
 dir_path = os.path.dirname( os.path.realpath( __file__ ) )
+
+wt_u6_model_file_path = os.path.join( dir_path, 'models/DeepWt_U6.hd5' )
+wt_t7_model_file_path = os.path.join( dir_path, 'models/DeepWt_T7.hd5' )
+
 esp_model_file_path = os.path.join( dir_path, 'models/esp_rnn_model.hd5' )
 hf_model_file_path = os.path.join( dir_path, 'models/hf_rnn_model.hd5' )
-model_esp = load_model( esp_model_file_path)
+
+model_wt_u6 = load_model( wt_u6_model_file_path )
+model_wt_t7 = load_model( wt_t7_model_file_path )
+
 model_hf = load_model( hf_model_file_path )
+model_esp = load_model( esp_model_file_path )
+
+
 
 #get embedding data
 def make_data(X):
@@ -72,7 +82,11 @@ def output_prediction(inputs, df, model_type='esp'):
     #model_file_path = os.path.join( dir_path, model_file )
     if model_type == 'esp':
         model = model_esp
-    else:
+    elif model_type == 'wt_u6':
+        model = model_wt_u6
+    elif model_type == 'wt_t7':
+        model = model_wt_t7
+    elif model_type == 'hf':
         model = model_hf
     Efficiency = model.predict( inputs )
     df['gRNA_Seq'] = df['21mer'].apply( lambda x: x[:-1] )

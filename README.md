@@ -39,9 +39,15 @@ Demos were included in the  [Demo.ipynb](https://github.com/izhangcd/DeepHF/blob
 
 * [training_util.py](https://github.com/izhangcd/DeepHF/blob/master/training_util.py) provides the code for training model in your own computing environment. The optimized hyperparameters is only fit for the aformentioned software/package environment.
 
+* [data/wt_seq_data_array.pkl](https://github.com/izhangcd/DeepHF/blob/master/data/wt_seq_data_array.pkl) , features and experimental edit efficiency data for WT-SpCas9. It can be used to train the model.
+
 * [data/esp_seq_data_array.pkl](https://github.com/izhangcd/DeepHF/blob/master/data/esp_seq_data_array.pkl), features and experimental edit efficiency data for eSpCas9(1.1). It can be used to train the model.
 
 * [data/hf_seq_data_array.pkl](https://github.com/izhangcd/DeepHF/blob/master/data/hf_seq_data_array.pkl) , features and experimental edit efficiency data for Cas9-HF1. It can be used to train the model.
+
+* [models/DeepWt_U6.hd5](https://github.com/izhangcd/DeepHF/blob/master/models/DeepWt_U6.hd5),the final model file of DeepWt_U6 used in the DeepHF wibsite.
+
+* [models/DeepWt_T7.hd5](https://github.com/izhangcd/DeepHF/blob/master/models/DeepWt_T7.hd5),the final model file of DeepWt_T7 used in the DeepHF wibsite.
 
 * [models/esp_rnn_model.hd5](https://github.com/izhangcd/DeepHF/blob/master/models/esp_rnn_model.hd5),the final model file of eSpCas9(1.1) used in the DeepHF wibsite.
 
