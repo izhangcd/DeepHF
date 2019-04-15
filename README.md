@@ -1,5 +1,9 @@
 ### System requirements
 The code were tesed on Linux and Mac OS systems.
+> #### Note:
+> - Keras should be run with tensorflow as its backend. 
+> - ViennaRNA, a C code library for prediction of RNA secondary structure, needs to be downloaded before installation.
+
 The required software/packages are:
 * python=3.6.5
 * numpy=1.14.0 
